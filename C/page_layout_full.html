@@ -3,25 +3,37 @@
 <style>
   body{
     margin: 0;
+    height: 100%;
     display: flex;
     background: url(http://backgroundlabs.com/wp-content/uploads/2013/04/subtle-mosaic-pattern.png);
     justify-content: center;
-  }
-  nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: gray;
-  }
-  nav a{
-    text-decoration: none;
-    color: black;
-    font-size: 20;
-    margin: 2;
   }
   .container{
     display: flex;
     width: 600;
     flex-direction: column;
+  }
+  nav{
+    display: flex;
+    background-color: gray;
+  }
+  nav a{
+    padding-top: 5;
+    height: 30;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 22;
+    font-family: serif;
+    flex-grow: 1;
+  }
+  nav a:hover{
+    background-color: red;
+    color: white;
+  }
+  .main_section{
+    background-color: white;
+    /* flex: 1 0 auto; */
   }
   .logo_part{
     width: 600;
@@ -38,10 +50,6 @@
     background-color: white;
     opacity:0.8;
   }
-  .main_section{
-    background-color: white;
-    /* flex: 1 0 auto;  */
-  }
   .cards{
     display: flex;
     flex-direction: row;
@@ -51,10 +59,9 @@
   .card{
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     border: 1px solid red;
     border-radius: 3px;
-    margin: 10;
+    margin:21;
   }
   .card a{
     text-align: center;
@@ -64,7 +71,7 @@
   .title{
     text-decoration: none;
     color:white;
-    background: lightseagreen;
+    background: rgb(122, 122, 233);
   }
   .price{
     font-weight: bold;
@@ -74,13 +81,14 @@
   }
 
   footer{
+    position: fixed;
     padding-top: 20;
     height: 40;
     width: 600;
     background-color: black;
     color: white;
     text-align: center;
-    /* flex: 0 0 auto; */
+    bottom: 0;
   }
 </style>
 </head>
