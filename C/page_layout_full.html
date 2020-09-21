@@ -6,11 +6,13 @@
     display: flex;
     background: url(http://backgroundlabs.com/wp-content/uploads/2013/04/subtle-mosaic-pattern.png);
     justify-content: center;
+    height: 1200;
   }
   .container{
     display: flex;
     width: 600;
     flex-direction: column;
+    position: relative;
   }
   nav{
     display: flex;
@@ -76,14 +78,14 @@
   }
 
   footer{
-    position: fixed;
+    position: absolute;
+    bottom: 0;
     padding-top: 20;
     height: 40;
     width: 600;
     background-color: black;
     color: white;
     text-align: center;
-    bottom: 0;
   }
 </style>
 </head>
